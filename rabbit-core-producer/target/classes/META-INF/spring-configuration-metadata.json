@@ -1,0 +1,12 @@
+{
+  "groups": [
+    {
+      "name": "rabbait.producer.druid.jdbc",
+      "type": "javax.sql.DataSource",
+      "sourceType": "com.rabbit.core.producer.config.datasource.RabbitProducerDataSourceConfiguration",
+      "sourceMethod": "rabbitProducerDataSource()"
+    }
+  ],
+  "properties": [],
+  "hints": []
+}

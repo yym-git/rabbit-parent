@@ -1,0 +1,6 @@
+com\rabbit\common\serializer\SerializerFactory.class
+com\rabbit\common\serializer\impl\JacksonSerializer.class
+com\rabbit\common\serializer\convert\RabbiMessageConvert.class
+com\rabbit\common\serializer\Serializer.class
+com\rabbit\common\serializer\convert\GenericMessageConvert.class
+com\rabbit\common\serializer\impl\JacksonSerializerFactory.class

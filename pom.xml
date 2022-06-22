@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <packaging>pom</packaging>
+    <modules>
+        <module>rabbit-common</module>
+        <module>rabbit-core-producer</module>
+        <module>rabbit-api</module>
+        <module>rabbit-task</module>
+        <module>rabbit-test</module>
+    </modules>
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.6.5</version>
+    </parent>
+    <groupId>com.base.rabbit</groupId>
+    <artifactId>rabbit-parent</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <properties>
+        <project.bulid.sourceEncoding>UTF-8</project.bulid.sourceEncoding>
+        <java.version>1.8</java.version>
+        <fasterxml.uuid.version>3.1.4</fasterxml.uuid.version>
+        <org.codehaus.jackson.version>1.9.13</org.codehaus.jackson.version>
+        <druid.version>1.0.24</druid.version>
+        <guava.version>20.0</guava.version>
+        <spring-boot.version>2.6.5</spring-boot.version>
+        <lombok.version>1.18.12</lombok.version>
+        <hutool.version>5.7.12</hutool.version>
+        <jackson.version>2.13.1</jackson.version>
+        <druid.version>1.2.8</druid.version>
+    </properties>
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.projectlombok</groupId>
+                <artifactId>lombok</artifactId>
+                <version>${lombok.version}</version>
+            </dependency>
+            <!-- https://mvnrepository.com/artifact/cn.hutool/hutool-all -->
+            <dependency>
+                <groupId>cn.hutool</groupId>
+                <artifactId>hutool-all</artifactId>
+                <version>${hutool.version}</version>
+            </dependency>
+            <!-- https://mvnrepository.com/artifact/com.google.guava/guava -->
+            <dependency>
+                <groupId>com.google.guava</groupId>
+                <artifactId>guava</artifactId>
+                <version>${guava.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.fasterxml.jackson.core</groupId>
+                <artifactId>jackson-databind</artifactId>
+                <version>${jackson.version}</version>
+            </dependency>
+
+            <!-- https://mvnrepository.com/artifact/com.alibaba/druid -->
+            <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>druid</artifactId>
+            <version>${druid.version}</version>
+        </dependency>
+
+        </dependencies>
+    </dependencyManagement>
+
+</project>

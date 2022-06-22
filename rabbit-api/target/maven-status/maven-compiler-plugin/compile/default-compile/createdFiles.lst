@@ -1,0 +1,7 @@
+com\rabbit\api\SendCallback.class
+com\rabbit\api\Message.class
+com\rabbit\api\MessageBuilder.class
+com\rabbit\api\MessageProducer.class
+com\rabbit\api\exception\MessageException.class
+com\rabbit\api\exception\MessageRuntimeException.class
+com\rabbit\api\MessageType.class
